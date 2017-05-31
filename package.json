@@ -1,0 +1,37 @@
+{
+  "name": "mochacourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha -R list -b",
+    "start": "node server.js"
+  },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/latest",
+      "firefox/latest",
+      "safari/latest"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
